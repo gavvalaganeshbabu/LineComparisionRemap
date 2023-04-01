@@ -10,6 +10,7 @@ namespace LineComparisionRemap
             LineComparision lineComparision = new LineComparision();
             Console.WriteLine(lineComparision.FindLength());
             lineComparision.IsEqualOfLength();
+            lineComparision.IsEqualOfLength2();
             Console.ReadLine();
         }
     }

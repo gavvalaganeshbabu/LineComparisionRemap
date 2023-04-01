@@ -34,6 +34,24 @@ namespace LineComparisionRemap
                 Console.WriteLine("Two Line are Not Equal");
             }
         }
+        public void IsEqualOfLength2()
+        {
+            LengthOfLine1 = FindLength();
+            LengthOfLine2 = FindLength();
+            double compareValue=LengthOfLine1.CompareTo(LengthOfLine2);
+            if (compareValue > 0)
+            {
+                Console.WriteLine("First Line is Greateer Than Second Line  ");
+            }
+            else if (compareValue < 0)
+            {
+                Console.WriteLine("Second Line is Greater than First Line ");
+            }
+            else
+            {
+                Console.WriteLine("Two Line Length are Equal  ");
+            }
+        }
 
 
     }
