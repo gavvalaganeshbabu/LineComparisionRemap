@@ -12,16 +12,30 @@ namespace LineComparisionRemap
         public double x2;
         public double y2;
         public double LengthOfLine;
-        public void FindLength() {
+        public double LengthOfLine1;
+        public double LengthOfLine2;
+        public double FindLength() {
          Console.WriteLine("Enter the Four End Points To calculate Length ");
          x1 = double.Parse(Console.ReadLine());
          y1 = double.Parse(Console.ReadLine());
          x2 = double.Parse(Console.ReadLine());
          y2 = double.Parse(Console.ReadLine());
          LengthOfLine= Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-         Console.WriteLine(LengthOfLine+" Is the Length of the Line ");
+         return LengthOfLine;
         }
-        
+        public void IsEqualOfLength() {
+            LengthOfLine1 = FindLength();
+            LengthOfLine2 = FindLength();
+            if (LengthOfLine1 == LengthOfLine2) {
+                Console.WriteLine("Two Lines Are Equal ");
+            }
+            else
+            {
+                Console.WriteLine("Two Line are Not Equal");
+            }
+        }
+
+
     }
 }
 

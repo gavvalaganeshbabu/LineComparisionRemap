@@ -8,7 +8,8 @@ namespace LineComparisionRemap
         {
             Console.WriteLine("Welcome To Line Comparision Computation :");
             LineComparision lineComparision = new LineComparision();
-            lineComparision.FindLength();
+            Console.WriteLine(lineComparision.FindLength());
+            lineComparision.IsEqualOfLength();
             Console.ReadLine();
         }
     }
